@@ -70,11 +70,10 @@ There are currently **no rate limits** on public endpoints.
 
 ## Next Steps
 
-- Check out the [Endpoints documentation](endpoints/) for detailed info on all available API routes.
 - Learn about [authentication](authentication.md) if you want to access restricted features.
 
 ---
 
-If you have questions or need help, please open an issue on our GitHub or contact support@opensanctum.com.
+If you have questions or need help, please open an issue on our GitHub or contact contato@opensanctum.com.
 
 Happy exploring!
