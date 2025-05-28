@@ -16,9 +16,7 @@ This repository contains markdown-based documentation structured as follows:
 
 - [`getting-started.md`](docs/getting-started.md) — How to use the API, with quick examples
 - [`authentication.md`](docs/authentication.md) — API key usage and permissions
-- [`endpoints/`](docs/endpoints/) — Detailed explanation of each endpoint (e.g., `/v1/churches`, `/v1/religion`)
 - [`faq.md`](docs/faq.md) — Frequently Asked Questions
-- [`changelog.md`](docs/changelog.md) — Release notes and updates
 
 ---
 
