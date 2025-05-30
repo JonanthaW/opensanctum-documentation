@@ -4,28 +4,34 @@ OpenSanctum API supports both **public** and **authenticated** access levels to 
 
 ---
 
-## Public Access
+### Roles & Permissions
 
-Certain API endpoints are **open to everyone** and do **not require authentication**. For example:
+OpenSanctum uses a role-based access control system to manage user permissions and features. Here is an overview of what each role entails:
 
-- `GET /v1/churches/id/{id}`
-- `GET /v1/religion/id/{id}`
+- **ROLE_USER**  
+  - Assigned automatically upon user registration on the website.  
+  - Allows basic access to the API endpoints that require authentication (beyond public endpoints).  
+  - Access to personal profile and settings on the website.
 
-These endpoints are free to use and ideal for quick lookups without any API keys or tokens.
+- **ROLE_USER-VERIFIED**  
+  - Assigned automatically after the user verifies their email address.
+  - Can submit new churches for approval.  
+  - Grants full authenticated access to some protected API routes.  
+  - Ability to receive notifications and access additional site features reserved for verified users.
+  -  Eligible for early access to community events and leaderboard.
 
----
+- **ROLE_SANCTUM**  
+  - Can be earned by reporting verified bugs or purchased via a monthly subscription.  
+  - Unlocks premium API access, including higher rate limits and extended data endpoints.  
+  - Access to special tools for data contribution and moderation.  
+  - Eligible for early access to new features and community events.
 
-## Authenticated Access
+- **ROLE_FAITHFUL**  
+  - The highest subscription tier, earned through community contributions or purchased.  
+  - Full access to all API features and exclusive premium content.  
+  - Priority support and direct communication channels with the OpenSanctum team.  
+  - Recognition as a key community member with special badges on the website.
 
-Some API endpoints require authentication to access enhanced features, contribute data, or access user-specific resources.
+> 🔐 **Note:** User roles are assigned and managed only on the website after login. Roles determine access to features both on the API and the website, so make sure to verify your email and consider subscribing for additional benefits.
 
-### How to Get an API Key
-
-Currently, API keys are issued by the OpenSanctum team upon request. To obtain an API key:
-
-- Visit our website [opensanctum.com](https://www.opensanctum.com)
-
-### Using Your API Key
-
-Include your API key in the HTTP `Authorization` header of each request you want to do.
 
