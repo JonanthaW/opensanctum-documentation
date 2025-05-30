@@ -13,7 +13,7 @@ A: The database is updated regularly as new submissions are approved.
 A: Yes! You can submit new locations through our contribution portal on the website.
 
 **Q: Where can I report bugs or request features?**  
-A: Open an issue on the [GitHub repository](https://github.com/opensanctum), or send a email to contato@opensanctum.com
+A: Open an issue on the ([Github documentation](https://github.com/JonanthaW/opensanctum-documentation)), or send a email to contato@opensanctum.com
 
 ---
 
