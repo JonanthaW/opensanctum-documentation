@@ -1,12 +1,16 @@
-# 📚 OpenSanctum API Documentation
+# OpenSanctum API Documentation
 
 Welcome to the official documentation for the [OpenSanctum](https://www.opensanctum.com) API — your gateway to discovering and contributing to a global directory of churches, temples, mosques, and sacred sites.
 
----
 
 ## 🔍 Overview
 
-OpenSanctum provides a free and open API that allows developers, researchers, and community members to explore and contribute religious place data worldwide. No authentication is required for public endpoints, and contributions are welcome!
+OpenSanctum is an open, community-driven API platform that provides comprehensive, accurate, and up-to-date information about churches, religions, and holy places around the world. Designed with developers and enthusiasts in mind, OpenSanctum offers a rich dataset accessible through a RESTful API built on modern technologies including Java 21, Spring Boot, PostgreSQL, and Angular.
+
+The project aims to foster global cultural and religious knowledge sharing by allowing users to contribute new data, verify existing entries, and engage with a vibrant community. OpenSanctum balances ease of access with robust security via token-based authentication, role management, and a subscription model offering enhanced features.
+
+Whether you’re building an app, researching religious sites, or contributing to a worldwide database, OpenSanctum provides a reliable and extensible platform to meet your needs.
+No authentication is required for public endpoints, and contributions are welcome!
 
 ---
 
@@ -29,7 +33,6 @@ https://www.opensanctum.com/document/api
 
 For example queries and full endpoint descriptions, head to [`docs/getting-started.md`](docs/getting-started.md).
 
----
 
 ## 📬 Contributing
 
