@@ -35,3 +35,24 @@ OpenSanctum uses a role-based access control system to manage user permissions a
 > 🔐 **Note:** User roles are assigned and managed only on the website after login. Roles determine access to features both on the API and the website, so make sure to verify your email and consider subscribing for additional benefits.
 
 
+### API Usage and Rate Limiting
+
+To ensure fair and stable access to the OpenSanctum API, rate limiting is enforced. This protects the API from excessive requests that could degrade service quality for other users.
+
+**Current Rate Limit Configuration:**
+
+- Applies to all API endpoints under `/v1/*`.
+- Limits requests based on the client's IP address (`getRemoteAddr()`).
+- Each client can make up to **100 requests every 10 minutes**.
+- If the limit is exceeded, the client receives an HTTP response with status `429 Too Many Requests` and a JSON message:
+  ```json
+  {
+    "message": "Too many requests, please try again after a few seconds!"
+  }
+  
+This mechanism helps protect OpenSanctum’s infrastructure while providing a smooth experience for all users.
+
+
+## Infrastructure  
+
+This configuration applies only to public routes at the moment. In the future, rate limits will be adjusted based on subscription levels for private routes, allowing premium roles (e.g., ROLE_SANCTUM, ROLE_FAITHFUL) to enjoy higher or customized limits according to their plans.
